@@ -34,7 +34,7 @@
 <body>
 <h1>Map of City of Calgary</h1>
 
-<div id='map' style="position: absolute;  top: 0;  bottom: 0;  width: 100%;"></div>
+<div id='mapid' style='width: 100%; height: 800px;'></div>
 
 
 </body>
@@ -44,12 +44,15 @@
 <script>
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWFoZGluYWltaSIsImEiOiJja2x1YmNtaTUwNHk3Mm5ueW4za2syN3RoIn0.-8ZpViNO2Fn9_XqBdPwQPQ';
-var map = new mapboxgl.Map({
-  container: 'map', // container id
-  style: 'mapbox://styles/mapbox/light-v10', // stylesheet location
+var mymap = new mapboxgl.Map({
+  container: 'mapid', // container id
+  style: 'mapbox://styles/mahdinaimi/ckm45d7193wyw17rmthwkdsji', // stylesheet location
   center: [-114.0719, 51.0447], // starting position
   zoom: 12 // starting zoom
 });
+
+<!--var schools = {$.getJSON('https://data.calgary.ca/resource/fd9t-tdn2.geojson'}-->
+
 
 </script>
 
